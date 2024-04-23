@@ -12,14 +12,6 @@ const { footer, visitor } = theme.value
 const { hasSidebar } = useSidebar()
 const pageId = usePageId()
 
-const establishmentTime = '2024-04-23 12:00:00'; // 示例建站时间
-
-// 添加一个方法来格式化日期，如果需要的话
-const formattedEstablishmentTime = computed(() => {
-  const date = new Date(establishmentTime);
-  return `${date.getFullYear()}年${date.getDate()}天${date.getHours()}时${date.getMinutes()}分${date.getSeconds()}秒`;
-});
-
 const isDocFooterVisible = computed(() => {
   return !DEV || footer.message || footer.copyright || visitor.badgeId
 })
@@ -35,11 +27,7 @@ const isDocFooterVisible = computed(() => {
         title="当前页面累计访问数"
         onerror="this.style.display='none'"
       />
-      <a v-if="footer?.message" href="https://beian.miit.gov.cn/" target="_blank">
-        {{ footer.message }}
-      </a>
-      <!-- 显示建站时间 -->
-      <p>{{ formattedEstablishmentTime }}</p>
+      <p v-if="footer?.message">{{ footer.message }}</p>
     </div>
     <p class="m-doc-footer-copyright" v-if="footer?.copyright">
       {{ footer.copyright }}

@@ -41,8 +41,10 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/nanshuo0814' }],
 
     footer: {
-      message: '粤ICP备xxxxx号',
-      copyright: 'Copyright © 2024-至今 by 南烁',
+      message:
+        '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备xxxxx号</a>',
+      copyright:
+        'Copyright © 2024-现在 by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
     },
 
     lastUpdated: {
