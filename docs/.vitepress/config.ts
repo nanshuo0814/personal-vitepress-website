@@ -1,8 +1,8 @@
-import { basename } from 'node:path'
-import { defineConfig } from 'vitepress'
+import {basename} from 'node:path'
+import {defineConfig} from 'vitepress'
 import MarkdownPreview from 'vite-plugin-markdown-preview'
 
-import { head, nav, sidebar } from './configs'
+import {head, nav, sidebar} from './configs'
 
 const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '')
 
@@ -38,13 +38,13 @@ export default defineConfig({
       label: '目录',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/nanshuo0814' }],
+    socialLinks: [{icon: 'github', link: 'https://github.com/nanshuo0814'}],
 
     footer: {
       message:
         '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备xxxxx号</a>',
       copyright:
-        'Copyright © 2024-现在 by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
+        'Copyright © 2024-today by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">nanshuo</a>',
     },
 
     lastUpdated: {

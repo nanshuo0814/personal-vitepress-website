@@ -3,22 +3,17 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  name: 茂茂的
-  text: 前端导航模板
-  tagline: 基于 VitePress 的个人前端导航页面模板
+  name: 南烁的
+  text: 资源导航平台
+  tagline: 这是一个汇聚各类资源的学习网站
   image:
     src: /logo.png
-    alt: 茂茂物语
+    alt: 南烁
   actions:
-    - text: 茂茂物语
-      link: https://notes.fe-mm.com
-    - text: 前端导航
-      link: /nav/
-      theme: alt
-    - text: mmPlayer
-      link: https://netease-music.fe-mm.com
-    - text: 测试页
-      link: /test
+    - text: 快速开始
+      link: /guide/getting-started
+    - text: GitHub
+      link: https://github.com/nanshuo0814/personal-vitepress-website
       theme: alt
 features:
   - icon: 📖
