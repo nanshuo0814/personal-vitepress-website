@@ -1,18 +1,41 @@
-import { h, watch } from 'vue'
+import {h, watch, onMounted, nextTick} from 'vue';
 import { useData, EnhanceAppContext } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
 import { createMediumZoomProvider } from './composables/useMediumZoom'
 
+// @ts-ignore
 import MLayout from './components/MLayout.vue'
+// @ts-ignore
 import MNavLinks from './components/MNavLinks.vue'
 
 import './styles/index.scss'
+
+import mediumZoom from 'medium-zoom';
+import { useRoute } from 'vitepress';
+
 
 let homePageStyle: HTMLStyleElement | undefined
 
 export default {
   extends: DefaultTheme,
+
+  setup() {
+
+    const route = useRoute();
+    const initZoom = () => {
+      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    );
+  },
+
   Layout: () => {
     const props: Record<string, any> = {}
     // 获取 frontmatter

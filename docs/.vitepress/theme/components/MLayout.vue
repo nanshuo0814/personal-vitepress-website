@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import {useData} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import {nextTick, provide} from 'vue'
 import Giscus from '@giscus/vue'
 
-import { usePageId } from '../composables'
+import {usePageId} from '../composables'
 
 import MNavVisitor from './MNavVisitor.vue'
 import MDocFooter from './MDocFooter.vue'
+import MAsideSponsors from "./MAsideSponsors.vue";
 
-const { Layout } = DefaultTheme
-const { isDark, theme, frontmatter } = useData()
+const {Layout} = DefaultTheme
+const {isDark, theme, frontmatter} = useData()
 const pageId = usePageId()
 
-const { comment } = theme.value
+const {comment} = theme.value
 
 const enableTransitions = () =>
   'startViewTransition' in document &&
   window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 
-provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
+provide('toggle-appearance', async ({clientX: x, clientY: y}: MouseEvent) => {
   if (!enableTransitions()) {
     isDark.value = !isDark.value
     return
@@ -40,7 +41,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   }).ready
 
   document.documentElement.animate(
-    { clipPath: isDark.value ? clipPath.reverse() : clipPath },
+    {clipPath: isDark.value ? clipPath.reverse() : clipPath},
     {
       duration: 300,
       easing: 'ease-in',
@@ -58,7 +59,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
     -->
     <template #nav-bar-title-after>
-      <MNavVisitor />
+      <MNavVisitor/>
     </template>
 
     <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
@@ -77,10 +78,25 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
           v-bind="{ ...comment }"
         />
       </div>
+
+    </template>
+
+    <!--    <template #aside-ads-before>-->
+
+    <!--    </template>-->
+
+<!--        <template #aside-ads-after>-->
+
+<!--        </template>-->
+
+    <template #aside-bottom>
+      <br/>
+      <span style="font-size: 13px;text-align: center;color: var(--vp-c-brand);"> 鼓励站长：欢迎 <a style="color: #4d8dfa;" target="_blank" href="https://github.com/nanshuo0814/personal-vitepress-website">star</a> 或 打赏犒劳</span>
+      <MAsideSponsors/>
     </template>
 
     <template #doc-after>
-      <MDocFooter />
+      <MDocFooter/>
     </template>
   </Layout>
 </template>

@@ -20,31 +20,58 @@ export default defineConfig({
 
   /* markdown 配置 */
   markdown: {
+    image: {
+      // 开启图片懒加载
+      lazyLoading: true
+    },
     lineNumbers: true,
+  },
+
+  // 站点地图
+  sitemap: {
+    hostname: 'https://nanshuo.icu',
   },
 
   /* 主题配置 */
   themeConfig: {
+
     i18nRouting: false,
 
+    // logo
     logo: '/logo.png',
-
+    // 导航栏
     nav,
+    // 侧边栏
     sidebar,
 
-    /* 右侧大纲配置 */
-    outline: {
-      level: 'deep',
-      label: '目录',
-    },
-
-    socialLinks: [{icon: 'github', link: 'https://github.com/nanshuo0814'}],
-
+    // 页脚
     footer: {
       message:
         '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备xxxxx号</a>',
       copyright:
-        'Copyright © 2024-today by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">nanshuo</a>',
+        'Copyright © 2024-today by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
+    },
+
+    /* 右侧大纲配置 */
+    outline: {
+      level: 'deep',
+      label: '当前页大纲',
+    },
+
+    //本地搜索
+    search: {
+      provider: 'local'
+    },
+
+    // 社交链接
+    socialLinks: [
+      {icon: 'github', link: 'https://github.com/nanshuo0814'},
+    ],
+
+    // 在GitHub编辑文章链接
+    editLink: {
+      pattern: 'https://github.com/nanshuo0814/personal-vitepress-website/edit/main/docs/:path', // 改成自己的仓库
+      text: '在GitHub编辑本页'
     },
 
     lastUpdated: {

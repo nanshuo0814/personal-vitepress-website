@@ -1,11 +1,11 @@
-import type { NavLink } from '../.vitepress/theme/types'
+import type { NavLink } from '../../.vitepress/theme/types'
 
-type NavData = {
+type FrontendData = {
   title: string
   items: NavLink[]
 }
 
-export const NAV_DATA: NavData[] = [
+export const FRONTEND_DATA: FrontendData[] = [
   {
     title: '常用工具',
     items: [
@@ -70,13 +70,13 @@ export const NAV_DATA: NavData[] = [
     title: '茂茂的站点导航',
     items: [
       {
-        icon: '/logo.png',
+        icon: 'https://notes.fe-mm.com/logo.png',
         title: '前端日常笔记',
         desc: '日常笔记记录（零零散散啥都记系列）',
         link: 'https://github.com/maomao1996/daily-notes',
       },
       {
-        icon: '/logo.png',
+        icon: 'https://notes.fe-mm.com/logo.png',
         title: '前端思维导图',
         desc: '用思维导图的方式总结个人所学知识',
         link: 'https://mindmap.fe-mm.com',
@@ -88,7 +88,7 @@ export const NAV_DATA: NavData[] = [
         link: 'https://qwerty.fe-mm.com',
       },
       {
-        icon: '/logo.png',
+        icon: 'https://notes.fe-mm.com/logo.png',
         title: 'mmPlayer',
         desc: 'mmPlayer 在线音乐播放器',
         link: 'https://netease-music.fe-mm.com',

@@ -27,11 +27,9 @@ const isDocFooterVisible = computed(() => {
         title="当前页面累计访问数"
         onerror="this.style.display='none'"
       />
-      <p v-if="footer?.message">{{ footer.message }}</p>
+      <span v-html="footer.message"></span>
     </div>
-    <p class="m-doc-footer-copyright" v-if="footer?.copyright">
-      {{ footer.copyright }}
-    </p>
+    <span v-html="footer.copyright"></span>
   </div>
 </template>
 
