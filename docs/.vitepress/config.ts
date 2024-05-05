@@ -47,9 +47,11 @@ export default defineConfig({
     // 页脚
     footer: {
       message:
-        '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备xxxxx号</a>',
+        '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备2024241400号</a>' +
+        '<br/>' +
+        '<span><img src="/beian.png" alt="公安备案" style="width: 18px;height: 18px;display: inline-block;vertical-align: middle; margin-right: 5px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44060702000428" style="text-decoration: none;" rel="noreferrer" target="_blank">粤公网安备44060702000428号</a></span>',
       copyright:
-        'Copyright © 2024-today by <a target="_blank" href=\'https://nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
+        'Copyright © 2024-today by <a target="_blank" href=\'https://www.nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
     },
 
     /* 右侧大纲配置 */

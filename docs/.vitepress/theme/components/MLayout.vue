@@ -85,14 +85,22 @@ provide('toggle-appearance', async ({clientX: x, clientY: y}: MouseEvent) => {
 
     <!--    </template>-->
 
-<!--        <template #aside-ads-after>-->
+    <!--        <template #aside-ads-after>-->
 
-<!--        </template>-->
+    <!--        </template>-->
 
     <template #aside-bottom>
       <br/>
-      <span style="font-size: 13px;text-align: center;color: var(--vp-c-brand);"> 鼓励站长：欢迎 <a style="color: #4d8dfa;" target="_blank" href="https://github.com/nanshuo0814/personal-vitepress-website">star</a> 或 打赏犒劳</span>
-      <MAsideSponsors/>
+      <span style="font-size: 13px;text-align: center;color: var(--vp-c-brand);">
+    关注站长公众号，获取最新资源
+  </span>
+<!--      <MAsideSponsors value="data2"/>-->
+      <img src="/wxgzh1.png" alt="微信公众号"/>
+      <span style="font-size: 13px;text-align: center;color: var(--vp-c-brand);">
+    鼓励站长：欢迎 <a style="color: #4d8dfa;" target="_blank"
+                     href="https://github.com/nanshuo0814/personal-vitepress-website">star</a> 或 打赏犒劳
+  </span>
+      <MAsideSponsors value="data1"/>
     </template>
 
     <template #doc-after>

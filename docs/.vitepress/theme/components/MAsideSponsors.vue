@@ -1,18 +1,38 @@
 <script setup lang="ts">
 import { VPDocAsideSponsors } from 'vitepress/theme'
 
-const data = [
+const data1 = [
   {
-    items: [{ img: '/public/wechatzhifu.png' }]
+    items: [{ img: '/wechatzhifu.png' }]
   },
-  // {
-  //   items: [{ img: '/public/zhifubaozhifu.png' }]
-  // }
-]
+  {
+    items: [{ img: '/zhifubaozhifu.png' }]
+  },
+];
+
+const data2 = [
+  {
+    items: [{ img: '/wxgzh1.png' }]
+  },
+];
+import { defineProps } from 'vue';
+
+const props = defineProps(['value']);
+
+function getData() {
+  if (props.value === 'data1') {
+    return data1;
+  } else if (props.value === 'data2') {
+    return data2;
+  } else {
+    // 处理默认情况或错误情况
+    return [];
+  }
+}
 </script>
 
 <template>
-  <VPDocAsideSponsors :data="data" />
+  <VPDocAsideSponsors :data="getData()" />
 </template>
 
 <style>

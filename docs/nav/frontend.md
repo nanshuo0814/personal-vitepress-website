@@ -12,6 +12,6 @@ import { FRONTEND_DATA } from './data/frontend'
 
 <br />
 
-::: danger 版权声明（特别感谢）
-本文导航由 [maomao](https://github.com/maomao1996) 开发，如有引用、借鉴的请保留版权声明：<https://github.com/maomao1996/vitepress-nav-template>
+::: warning 版权声明
+本文由 [南烁](https://github.com/nanshuo0814) 开发，如有引用、借鉴的请保留版权声明
 :::

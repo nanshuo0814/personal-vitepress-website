@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { inject, Ref, computed } from 'vue'
-import { useData } from 'vitepress'
-import { useSidebar } from 'vitepress/theme'
+import {computed, inject, Ref} from 'vue'
+import {useData} from 'vitepress'
+import {useSidebar} from 'vitepress/theme'
 
-import { usePageId } from '../composables'
+import {usePageId} from '../composables'
 
 const DEV = inject<Ref<boolean>>('DEV')
-const { theme } = useData()
-const { footer, visitor } = theme.value
+const {theme} = useData()
+const {footer, visitor} = theme.value
 
-const { hasSidebar } = useSidebar()
+const {hasSidebar} = useSidebar()
 const pageId = usePageId()
 
 const isDocFooterVisible = computed(() => {
@@ -27,8 +27,8 @@ const isDocFooterVisible = computed(() => {
         title="当前页面累计访问数"
         onerror="this.style.display='none'"
       />
-      <span v-html="footer.message"></span>
     </div>
+    <span style="text-align: center" v-html="footer.message"></span>
     <span v-html="footer.copyright"></span>
   </div>
 </template>
