@@ -105,7 +105,7 @@ export const AI_DATA: AiData[] = [
         link: 'https://tongyi.aliyun.com/lingma',
       },
       {
-        icon: 'https://d16xvuom8mr9m8.cloudfront.net/favicons/apple-touch-icon.png',
+        icon: 'https://www.tabnine.com/wp-content/themes/tabnine/dist/images/favicon.png',
         title: 'Tabnine',
         desc: '由Codota公司开发，智能代码补全',
         link: 'https://www.tabnine.com/',

@@ -15,7 +15,6 @@ const data2 = [
     items: [{ img: '/wxgzh1.png' }]
   },
 ];
-import { defineProps } from 'vue';
 
 const props = defineProps(['value']);
 

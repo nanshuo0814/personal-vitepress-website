@@ -10,7 +10,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     link: '/about/',
   },
   {
-    text: '编程资源导航',
+    text: '编程开发资源导航',
     collapsed: false,
     items: [
       {
@@ -26,20 +26,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         link: '/nav/backend'
       },
       {
-        text: '社区资源',
-        link: '/nav/community'
-      },
-      {
-        text: '开发辅助工具',
-        link: '/nav/develop-utils'
-      },
-      {
-        text: '代码托管平台',
-        link: '/nav/code-hosting-platform'
-      },
-      {
-        text: '写博客笔记工具',
-        link: '/nav/note-utils'
+        text: '编程资源',
+        link: '/nav/programming-resources'
       },
     ]
   },

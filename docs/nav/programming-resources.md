@@ -2,13 +2,13 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { DATA } from './data/note-utils'
+import { DATA } from './data/programming-resources'
 </script>
 
-# 写博客笔记工具
+# 编程资源
 
 ::: tip 说明
-收集常见常用的写博客笔记工具
+收集常见常用的编程资源
 
 倘若你知晓其他更好的资源，而这些资源在本站尚未收录，欢迎随时 <a href='/about/'>**联系站长**</a> 分享贡献资源哦！
 
