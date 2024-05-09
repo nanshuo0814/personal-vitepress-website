@@ -70,7 +70,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'JQSLTYCJ0C',
-        apiKey: '87ad12e30f4f1c7b022f91a505d6c96a',
+        apiKey: '3a38f6b9bf3bd7743862b85216b2c3f2',
         indexName: 'nanshuo-website',
       },
     },
