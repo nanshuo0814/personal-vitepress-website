@@ -10,9 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Get the content of docsearch.json as config
         id: algolia_config
         run: echo "config=$(cat docsearch.json | jq -r tostring)" >> $GITHUB_STATE
+
+      - name: Check website accessibility
+        run: curl -sI https://www.nanshuo.icu/ | grep "200 OK"
 
       - name: Run algolia/docsearch-scraper image
         env:
