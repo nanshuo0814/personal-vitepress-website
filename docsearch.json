@@ -6,7 +6,7 @@
             "selectors_key": ""
         }
     ],
-    "stop_urls": [""],
+    "stop_urls": [],
     "selectors": {
         "default": {
             "lvl0": {
