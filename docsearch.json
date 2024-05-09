@@ -4,7 +4,7 @@
   "selectors": {
     "lvl0": {
       "selector": "",
-      "default_value": "Documentation"
+      "default_value": "全站目录导航"
     },
     "lvl1": ".content h1",
     "lvl2": ".content h2",
