@@ -1,0 +1,35 @@
+{
+    "index_name": "nanshuo-website",
+    "start_urls": [
+        {
+            "url": "https://www.nanshuo.icu/",
+            "selectors_key": ""
+        }
+    ],
+    "stop_urls": [""],
+    "selectors": {
+        "default": {
+            "lvl0": {
+                "selector": "",
+                "default_value": "我的文档"
+            },
+            "lvl1": ".theme-default-content h1",
+            "lvl2": ".theme-default-content h2",
+            "lvl3": ".theme-default-content h3",
+            "lvl4": ".theme-default-content h4",
+            "lvl5": ".theme-default-content h5",
+            "lvl6": ".theme-default-content h6",
+            "text": ".theme-default-content p, .theme-default-content li",
+            "lang": {
+                "selector": "/html/@lang",
+                "type": "xpath",
+                "global": true
+            }
+        }
+    },
+    "custom_settings": {
+        "attributesForFaceting": [
+            "lang"
+        ]
+    }
+}
