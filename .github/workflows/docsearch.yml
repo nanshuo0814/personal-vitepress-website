@@ -14,16 +14,14 @@ jobs:
         id: algolia_config
         run: echo "config=$(cat docsearch.json | jq -r tostring)" >> $GITHUB_STATE
 
-      - name: Check website accessibility
-        run: curl -sI https://www.nanshuo.icu/ | grep "200 OK"
-
       - name: Run algolia/docsearch-scraper image
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
+          CONFIG: ${{ steps.algolia_config.outputs.config }}
         run: |
           docker run \
             --env APPLICATION_ID=${APPLICATION_ID} \
             --env API_KEY=${API_KEY} \
-            --env "CONFIG=$(cat docsearch.json | jq -r tostring)" \
+            --env "CONFIG=${CONFIG}" \
             algolia/docsearch-scraper
