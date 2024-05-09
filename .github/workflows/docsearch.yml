@@ -1,0 +1,27 @@
+name: docsearch
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  algolia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get the content of docsearch.json as config
+        id: algolia_config
+        run: echo "config=$(cat docsearch.json | jq -r tostring)" >> $GITHUB_STATE
+
+      - name: Run algolia/docsearch-scraper image
+        env:
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          docker run \
+            --env APPLICATION_ID=${APPLICATION_ID} \
+            --env API_KEY=${API_KEY} \
+            --env "CONFIG=$(cat docsearch.json | jq -r tostring)" \
+            algolia/docsearch-scraper
