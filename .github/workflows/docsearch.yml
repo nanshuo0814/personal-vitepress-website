@@ -10,9 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # 添加步骤，打印 docsearch.json 内容，确保内容正确
+      - name: Show docsearch.json content
+        run: cat docsearch.json
+
       - name: Get the content of docsearch.json as config
         id: algolia_config
-        run: echo "config=$(cat docsearch.json | jq -r tostring)" >> $GITHUB_STATE
+        # 可能问题出在 jq 的用法，改为直接赋值给一个变量
+        run: |
+          config=$(cat docsearch.json)
+          echo "config=$config" >> $GITHUB_STATE  # 使用直接赋值的方法，避免 jq 的不确定性
 
       - name: Run algolia/docsearch-scraper image
         env:
