@@ -48,7 +48,7 @@ export const DATA: Data[] = [
         icon: 'https://mail.proton.me//assets/apple-touch-icon-60x60.png',
         title: 'ProtonMail邮箱',
         desc: '一个注重隐私保护的电子邮件服务，提供端到端加密、无日志政策和基于瑞士法律的安全性',
-        link: 'https://mail.google.com/mail/u/1/?pli=1#inbox',
+        link: 'https://mail.proton.me/',
       },
       {
         icon: 'https://mail.163.com/favicon.ico',
@@ -63,12 +63,12 @@ export const DATA: Data[] = [
     items: [
       {
         title: '搜片网站线路网速情况',
-        icon: 'https://inews.gtimg.com/newsapp_ls/0/14917398302/',
+        icon: 'https://soupian.one/images/icon.png',
         desc: '查看搜片网站不同域名下线路的网速情况，找到最优的进行观看',
         link: 'https://xindizhi.github.io/soupian/',
       },
       {
-        icon: 'https://inews.gtimg.com/newsapp_ls/0/14917398302/',
+        icon: 'https://soupian.one/images/icon.png',
         title: '搜片',
         desc: '收录每个优秀的影视站点，集合各种影视资源，方便你快速找到你喜欢的片源',
         link: 'https://soupian.one/',
