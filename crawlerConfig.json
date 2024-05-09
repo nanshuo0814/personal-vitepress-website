@@ -1,7 +1,7 @@
 {
   "index_name": "heels-of-giants docs search engine",
   "start_urls": [
-    "https://www.nanshuo.icu/docs/"
+    "https://www.nanshuo.icu/"
   ],
   "rateLimit": 8,
   "maxDepth": 10,
