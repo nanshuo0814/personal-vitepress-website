@@ -3,7 +3,7 @@ outline: [2, 3, 4]
 ---
 
 <script setup>
-import { FRONTEND_DATA } from './data/frontend'
+import { FRONTEND_DATA } from '../data/frontend.js'
 </script>
 
 # 前端导航
