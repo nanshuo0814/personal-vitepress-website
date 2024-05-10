@@ -2,7 +2,7 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { AI_DATA } from '../data/ai.js'
+import { AI_DATA } from '../data/ai'
 </script>
 
 

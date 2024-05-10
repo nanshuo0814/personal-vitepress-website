@@ -2,7 +2,7 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { BACKEND_DATA } from '../data/backend.js'
+import { BACKEND_DATA } from '../data/backend'
 </script>
 
 # 后端导航

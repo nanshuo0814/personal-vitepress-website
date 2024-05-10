@@ -2,7 +2,7 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { DATA } from '../data/practical-tools.js'
+import { DATA } from '../data/practical-tools'
 </script>
 
 # 实用工具资源导航

@@ -2,7 +2,7 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { DATA } from '../data/programming-resources.js'
+import { DATA } from '../data/programming-resources'
 </script>
 
 # 编程资源

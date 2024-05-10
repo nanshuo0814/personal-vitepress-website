@@ -2,7 +2,7 @@
 outline: [2, 3, 4]
 ---
 <script setup>
-import { DATA } from '../data/cloud-platform.js'
+import { DATA } from '../data/cloud-platform'
 </script>
 
 # 云平台
