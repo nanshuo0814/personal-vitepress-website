@@ -10,6 +10,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     link: '/about/',
   },
   {
+    text: 'AI资源工具导航',
+    link: '/nav/ai',
+  },
+  {
+    text: '实用工具资源导航',
+    link: '/nav/practical-tools',
+  },
+  {
     text: '编程开发资源导航',
     collapsed: false,
     items: [
@@ -31,12 +39,5 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       },
     ]
   },
-  {
-    text: 'AI资源工具导航',
-    link: '/nav/ai',
-  },
-  {
-    text: '实用工具资源导航',
-    link: '/nav/practical-tools',
-  },
+
 ]

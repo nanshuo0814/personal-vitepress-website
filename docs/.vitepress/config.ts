@@ -49,7 +49,7 @@ export default defineConfig({
       message:
         '<a target="_blank" href=\'https://beian.miit.gov.cn/\' style="text-decoration: none;">粤ICP备2024241400号</a>' +
         '<br/>' +
-        '<span><img src="/beian.png" alt="公安备案" style="width: 18px;height: 18px;display: inline-block;vertical-align: middle; margin-right: 5px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44060702000428" style="text-decoration: none;" rel="noreferrer" target="_blank">粤公网安备44060702000428号</a></span>',
+        '<a href="https://beian.mps.gov.cn/#/query/webSearch?code=44060702000428" style="text-decoration: none;" rel="noreferrer" target="_blank">粤公网安备44060702000428号</a>',
       copyright:
         'Copyright © 2024-today by <a target="_blank" href=\'https://www.nanshuo.icu/\' style="text-decoration: none;">南烁</a>',
     },
@@ -69,9 +69,9 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: 'JQSLTYCJ0C',
-        apiKey: '3a38f6b9bf3bd7743862b85216b2c3f2',
-        indexName: 'nanshuo-website',
+        appId: 'PEELF8U9A8',
+        apiKey: '27418027df79a92844ac5ff9f5faaf17',
+        indexName: 'nanshuo',
         placeholder: "搜索文档",
         translations: {
           button: {
