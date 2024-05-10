@@ -11,11 +11,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   },
   {
     text: 'AI资源工具导航',
-    link: '/nav/ai',
+    link: '/nav/ai/',
   },
   {
     text: '实用工具资源导航',
-    link: '/nav/practical-tools',
+    link: '/nav/practical-tools/',
   },
   {
     text: '编程开发资源导航',
@@ -23,19 +23,19 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     items: [
       {
         text: '云平台',
-        link: '/nav/cloud-platform'
+        link: '/nav/cloud-platform/'
       },
       {
         text: '前端资源',
-        link: '/nav/frontend'
+        link: '/nav/frontend/'
       },
       {
         text: '后端资源',
-        link: '/nav/backend'
+        link: '/nav/backend/'
       },
       {
         text: '编程资源',
-        link: '/nav/programming-resources'
+        link: '/nav/programming-resources/'
       },
     ]
   },

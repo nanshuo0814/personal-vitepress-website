@@ -63,5 +63,28 @@ export const DATA: Data[] = [
         link: 'https://www.hostbuf.com/',
       },
     ],
-  }
+  },
+  {
+    title: '国内免费CDN加速&对象储存',
+    items: [
+      {
+        title: '又拍云',
+        icon: 'https://console.upyun.com/assets/favicon.png',
+        desc: '提供有免费额度的CDN、云存储、HTTPS/SSL证书等一站式加速解决方案',
+        link: 'https://console.upyun.com/',
+      },
+      {
+        icon: 'https://console.dogecloud.com//images/icon/favicon.png',
+        title: '多吉云',
+        desc: '一家提供云存储、网站加速、CDN等服务的创新科技企业',
+        link: 'https://console.dogecloud.com/home/overview',
+      },
+      {
+        icon: 'https://static.qiniu.com/favicon.ico?v=2',
+        title: '七牛云',
+        desc: '专注于云存储、云处理等云计算相关服务的平台',
+        link: 'https://portal.qiniu.com/home',
+      },
+    ],
+  },
 ]
