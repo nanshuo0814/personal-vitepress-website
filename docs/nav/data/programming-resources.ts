@@ -156,5 +156,46 @@ export const DATA: Data[] = [
         link: 'https://typoraio.cn/',
       },
     ],
-  }
+  },
+  {
+    title: '招聘求职网站',
+    items: [
+      {
+        title: '力扣',
+        icon: 'https://android-artworks.25pp.com/fs08/2024/01/03/3/110_88acd0ae7a97bd1ab9741f9f1647f647_con.png',
+        desc: '中国领先的在线技术社区，提供技术职业培训、技术职业规划',
+        link: 'https://leetcode.cn/',
+      },
+      {
+        title: '牛客网',
+        icon: 'https://static.nowcoder.com/fe/file/images/nowpick/web/www-favicon.ico',
+        desc: '中国领先的在线技术社区，提供技术职业培训、技术职业规划',
+        link: 'https://www.nowcoder.com',
+      },
+      {
+        title: 'Boss直聘',
+        icon: 'https://static.zhipin.com/v2/web/geek/images/logo.png',
+        desc: '知名招聘平台，求职者能与招聘者直接对话，高效便捷，提供丰富岗位选择。',
+        link: 'https://www.zhipin.com',
+      },
+      {
+        title: '拉勾',
+        icon: 'https://www.lagou.com/favicon.ico',
+        desc: '专注于互联网行业的招聘平台，为互联网人才和企业搭建沟通桥梁。',
+        link: 'https://www.lagou.com',
+      },
+      {
+        title: '前程无忧',
+        icon: 'https://www.51job.com/favicon.ico',
+        desc: '综合性招聘平台，提供海量职位信息，服务广泛，助力求职者寻得理想工作。',
+        link: 'https://www.51job.com',
+      },
+      {
+        title: '猎聘网',
+        icon: 'https://concat.lietou-static.com/fe-www-pc/v6/static/images/favicon.e6edbc00.ico',
+        desc: '猎聘网是专注中高端人才招聘的平台，连接企业、猎头与求职者，提供优质职场机会。',
+        link: 'https://www.liepin.com',
+      },
+    ],
+  },
 ]
