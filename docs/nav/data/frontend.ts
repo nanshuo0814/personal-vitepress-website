@@ -446,12 +446,6 @@ export const FRONTEND_DATA: FrontendData[] = [
         link: 'https://developer.mozilla.org/zh-CN',
       },
       {
-        icon: '/public/cainiaojiaocheng.png',
-        title: '菜鸟教程',
-        desc: '学的不仅是技术，更是梦想！',
-        link: 'https://www.runoob.com',
-      },
-      {
         icon: 'https://es6.ruanyifeng.com/favicon.ico',
         title: 'ES6 入门教程',
         desc: '阮一峰的网络日志',

@@ -50,11 +50,23 @@ export const DATA: Data[] = [
         desc: '中文互联网高质量的问答社区和创作者聚集的原创内容平台',
         link: 'https://juejin.cn',
       },
+      {
+        icon: '/public/cainiaojiaocheng.png',
+        title: '菜鸟教程',
+        desc: '学的不仅是技术，更是梦想！',
+        link: 'https://www.runoob.com/',
+      },
     ],
   },
   {
     title: '开发辅助工具',
     items: [
+      {
+        icon: '/public/cainiaojiaocheng.png',
+        title: '菜鸟工具',
+        desc: '不止于工具',
+        link: 'https://www.jyshare.com/',
+      },
       {
         icon: 'https://1024tools.com/favicon.ico',
         title: 'UUID在线生成',
